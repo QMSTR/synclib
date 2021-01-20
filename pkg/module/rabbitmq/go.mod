@@ -1,4 +1,4 @@
-module github.com/qmstr/synclib/module/rabbitmq
+module github.com/qmstr/synclib/pkg/module/rabbitmq
 
 go 1.14
 

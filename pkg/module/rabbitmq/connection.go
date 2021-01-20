@@ -1,7 +1,7 @@
 package rabbitmq
 
 import (
-	"github.com/qmstr/synclib/module/util"
+	"github.com/qmstr/synclib/pkg/module/util"
 	"github.com/streadway/amqp"
 )
 
