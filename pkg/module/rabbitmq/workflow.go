@@ -31,7 +31,8 @@ func OnMessageReceive(ch *amqp.Channel, queueName string, callback Callback) cha
 
 			// Executing the module's callback function
 			log.Printf("Executing callback function...")
-			callback()
+			err := callback()
+			util.FailOnError(err, "Callback failed")
 
 			// Sending a response
 			log.Printf("...callback function completed. Sending response...")
