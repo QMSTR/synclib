@@ -7,7 +7,7 @@ import (
 	"log"
 )
 
-type Callback func()
+type Callback func() error
 
 func OnMessageReceive(ch *amqp.Channel, queueName string, callback Callback) chan bool {
 
